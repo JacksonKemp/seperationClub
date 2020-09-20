@@ -1,0 +1,71 @@
+/* ROBOTO FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 
+Theme colours:
+*/
+:root {
+    --navy: #002E44;
+    --softer-pink: #E3747A;
+    --grey: #A5BEC2;
+    --teal: #00A8B0;
+    --white: #FFFFFF;
+  }
+
+  body {
+    background-color: var(--grey);
+    font-family: Roboto;
+  }
+  
+/* NAV BAR and LOGO */
+
+  header {
+    display: flex; 
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: var(--dark-dark);
+    font-weight: 300;
+  }
+  #nav-bar {
+    
+  }
+  @media screen and (max-width: 992px) {
+    #nav-bar {
+      justify-content: center;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    nav-bar {
+      justify-content: left;
+    }
+  }
+  #title {
+    color: var(--light-light); 
+  }
+  #nav-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80vw;
+  }
+  nav > ul {
+    list-style: none;
+  }
+  .nav-icon {
+    text-decoration: none;
+    color: var(--light-light);
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-end;
+    padding: 10px 40px 10px 40px;
+    margin: -20px 0px -20px 0px;
+  }
+  .nav-icon:hover {
+    background-color: var(--black);
+  }
