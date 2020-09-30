@@ -21,6 +21,18 @@ Theme colours:
 ul {
   list-style: none;
 }
+
+.favicon {
+  width: 40px;
+  height: 40px;
+}
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
 /* NAV BAR and LOGO */
 
   header {
@@ -32,7 +44,7 @@ ul {
     margin: 0px 40px 0px 0px;
     width: 100vw;
     /* background-color: var(--white); */
-    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.35);
     font-weight: 300;
   }
  
@@ -79,11 +91,11 @@ ul {
 
 /* CONTENTS OF WEBSITE BEGIN */
 
-
+/* HEADER BEGINS */
 
   #main-header {
     margin-top: -10px;
-    background-image: url("sunset-women-cropped.png");
+    background-image: url("file:///Users/jacksonkemp/Desktop/seperationClub/images/sunset-women-cropped.png");
     box-shadow: inset 0 0 0 1000px rgba(0,0,0,.3);
     background-size: cover;
     width: 100vw;
@@ -107,6 +119,8 @@ ul {
     margin-bottom: 40px;
   }
 
+/* HEADER ENDS */
+
 .button  {
   text-decoration: none;
   color: var(--white);
@@ -124,6 +138,8 @@ ul {
     color: var(--softer-pink);
   }
 
+/* BENEFITS BEGIN */
+
   #main-benefits {
     background-size: cover;
     width: 100vw;
@@ -132,14 +148,15 @@ ul {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: var(--softer-pink);
   }
+
   .benefits-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     width: 100%;
     max-width: 100vw;
-    margin: 0;
-    background-color: var(--grey);
+    
   }
   .benefit {
     display: flex;
@@ -147,16 +164,19 @@ ul {
     justify-content: center;
     align-content: center;
     text-decoration: none;
-    padding: 20px 0 20px 0;
     font-weight: 500;
     font-size: 20px;
-    color: var(--white);
+    color: var(--navy);
   }
 
+/* BENEFITS END */
+
+/* NEGATIVES BEGIN */
+
 #main-negatives {
-  background-image: url("mood-pink.jpg");
+  background-image: url("file:///Users/jacksonkemp/Desktop/seperationClub/images/unsure-women.jpg");
     /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.55); */
-  margin-top: -10px;
+  margin-top: 250px;
   background-size: cover;
   width: 100vw;
   height: 400px;
@@ -166,10 +186,10 @@ ul {
 }
 
 #main-negatives > h1 {
-  color: var(--white);
+  color: var(--navy);
   font-weight: 400;
   font-size: 40px;
-  margin: 95px 0 0 0;
+  margin: -200px 0 0 0;
 }
 
 #main-negatives > a > button {
@@ -210,3 +230,313 @@ ul {
   color: var(--navy);
 }
 
+/* NEGATIVES END */
+
+/* SUCCESS BEGIN */
+
+#main-success {
+  background-image: url("file:///Users/jacksonkemp/Desktop/seperationClub/images/positive-women-1.jpg");
+  /* box-shadow: inset 0 0 0 1000px rgba(0,0,0,.6); */
+  margin-top: 400px;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-success > h1 {
+  color: var(--navy);
+  font-weight: 400;
+  font-size: 40px;
+  margin: -250px 0 0 0;
+}
+#main-success > p {
+  color: var(--navy);
+  font-weight: 200;
+  font-size: 20px;
+  width: 450px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: -10px;
+}
+#main-success > h3 {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 30px;
+  margin-bottom: -5px;
+}
+
+#main-success > a > button {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--teal); 
+  border: none;
+  border-radius: 30px;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#main-success > a > button:hover {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+.success-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 10px 0 10px 0;
+}
+.success {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal);
+  padding: -10px;
+}
+
+/* SUCCESS END */
+
+/* PLAN BEGIN */
+
+#main-plan {
+  background-color: var(--grey);
+  margin-top: -10px;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-plan > h1 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 40px;
+  margin: 45px 0 0 20px;
+}
+
+.image-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 79%;
+  margin: 40px 0 0 0;
+}
+.step-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal);
+}
+
+.plan-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 0 40px 0;
+}
+.step {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal);
+}
+
+#main-plan > a > button {
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--teal); 
+  border: none;
+  border-radius: 30px;
+  padding: 20px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#main-plan > a > button:hover {
+  background-color: var(--white);
+  color: var(--navy);
+}
+
+/* SUCCESS END */
+
+/* PRODUCTS BEGIN */
+
+#main-product {
+  background-color: var(--teal);
+  margin-top: -10px;
+  background-size: cover;
+  width: 100vw;
+  height: 400px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#main-product > h2 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.product-tile > h4 {
+  color: var(--white);
+  margin: 20px 0 15px 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1vw;
+  width: 80%;
+  max-width: 1280px;
+  height: 300px;
+  margin: 0;
+}
+.product-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: var(--grey);
+  border-radius: 20px;
+}
+#premium {
+  background-color: var(--softer-pink);
+}
+
+.product-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: var(--white);
+}
+
+.product-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  color: var(--white);
+}
+
+.list-wrapper {
+  display: table;
+  margin: 0 auto;
+}
+
+.feature-list {
+  display: inline; 
+	text-align: left; 
+}
+
+.feature {
+  color: var(--white);
+}
+
+/* PRODUCTS END */
+
+/* STATS BEGIN */
+
+#main-stats {
+  background-size: cover;
+  width: 100vw;
+  height: 100px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#stat-title {
+  color: var(--white);
+  font-size: 20px;
+  font-weight: 500;
+  background-color: var(--teal);
+  background-size: cover;
+  width: 100vw;
+  height: 200px;
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  width: 100%;
+  max-width: 100vw;
+  background-color: var(--teal);
+}
+.stat {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  padding: 0 0 20px 0;
+  font-weight: 500;
+  font-size: 20px;
+  color: var(--white);
+}
+
+/* STATS END */
+
+/* FOOTER BEGINS */
+
+#home-footer {
+  background-color: var(--white);
+  margin-top: 80px;
+  background-size: cover;
+  width: 100vw;
+  height: 80px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+}
+
+#footer-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--teal);
+}
+/* FOOTER ENDS */
